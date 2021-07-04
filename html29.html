@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selectors</title>
+    <style>
+        h1 {
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        div p {
+            color: white;
+            background-color: rgb(15, 2, 2);
+        }
+
+        div li p {
+            background-color: green;
+        }
+
+        div+p {
+            background-color: grey;
+        }
+
+        div>p {
+            background-color: rgb(10, 14, 240);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is idea about Selectors</h1>
+    <div class="row">
+        <ul>
+            <li class="item">
+                <p>This is another paragraph inside li</p>
+            </li>
+        </ul>
+        <p>This is a paragraph</p>
+    </div>
+    <p>This is another paragraph</p>
+</body>
+
+</html>

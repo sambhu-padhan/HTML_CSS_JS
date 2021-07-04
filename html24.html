@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Positioning</title>
+    <style>
+        .container {
+            background-color: black;
+            height: 2000px;
+        }
+
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            width: 200px;
+            height: 150px;
+            margin: 3px 0px;
+            background-color: blue;
+        }
+
+        #box4 {
+            position: fixed;
+            right: 10px;
+            bottom: 2px;
+            /* position: absolute; */
+            /* top: 34px;
+            left: 30px; */
+            /* position: relative; */
+        }
+        #box3{
+            position: sticky;
+            top: 2px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+</body>
+
+</html>
