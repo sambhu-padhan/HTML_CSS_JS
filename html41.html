@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 0.5rem;
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer'
+        }
+
+        .item {
+            background-color: green;
+            border: 2px solid black;
+            padding: 10px 15px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Contact Us
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolores fugit molestiae accusamus error
+            architecto culpa iste dolorem sunt? Quaerat, suscipit aspernatur labore unde blanditiis nobis laboriosam
+            impedit inventore deserunt.
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laboriosam tempore consectetur suscipit.
+            Minima, neque dolor. Maxime numquam aperiam iure explicabo illo, exercitationem itaque optio autem sequi
+            aut, asperiores ratione tempora atque at ea voluptates! Excepturi ipsum quia corrupti. Labore.
+        </div>
+        <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quis?</footer>
+    </div>
+</body>
+
+</html>

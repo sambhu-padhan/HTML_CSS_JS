@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scope and conditionals</title>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+
+    <script>
+        // var string1 = "this is srting";
+        // var string1 = "this is another string";           // let cnan't asign the value to previous variable
+        // console.log(string1);
+
+        let string1 = "this is string";
+        {
+            let string1 = "this is another string";
+            console.log(string1)
+        }
+        console.log(string1)
+
+        const a = "this is Sambhu";
+        // a = "I am Sambhu, you cannot change it";        //you cannot change a const variable
+        console.log(a);
+
+        const val = 1;
+        switch (val) {
+            case 1:
+            console.log("ok");
+            // break;
+            case 3:
+            console.log("ok");
+            // break;
+            case 4:
+            console.log("ok");
+            break;
+            case 10:
+            console.log("ok");
+            break;
+            case 16:
+            console.log("ok");
+            break;
+
+            default:
+            console.log("the value is not present here.");
+                break;
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid + Media Queries</title>
+    <style>
+        
+        .container {
+            display: grid;
+            grid-gap: 10px;
+            background-color: green;
+            border: 2px solid black;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        .bdr {
+            border: 2px solid black;
+            grid-gap: 2px;
+            margin: 5px;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        @media only screen and (max-width: 200px) {
+            .bdr {
+                background-color: forestgreen;
+            }
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+            span{
+                display: block;
+            }
+        }
+
+        @media only screen and (min-width: 200px) and (max-width: 500px) {
+            .bdr {
+                background-color: gray;
+
+            }
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+            }
+        }
+
+        @media only screen and (min-width: 500px) and (max-width: 800px) {
+
+            .bdr {
+                background-color: rgb(67, 22, 231);
+            }
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+        }
+
+        @media only screen and (min-width: 800px) {
+            .bdr {
+                color: black;
+                background-color: rgb(243, 239, 11);
+
+            }
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Contact Us</span>
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS in Hindi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem tenetur sunt iste nisi placeat quasi
+                pariatur eligendi aperiam modi? Recusandae.</p>
+        </section>
+        <aside class="bdr">
+            <h1>More about us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, error.</p>
+        </aside>
+        <footer class="bdr">Copyright www.sambhuonline Portal</footer>
+    </div>
+</body>
+
+</html>

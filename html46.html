@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javscript string functions</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+        var string = 'This is a sting';
+        console.log(string);
+        var position = string.indexOf('is');  //first occurance of string 'is'
+        console.log(position);
+        var position = string.lastIndexOf('is');  //last occurance of string 'is'
+        console.log(position);
+
+        var slice = string.slice(1, 6);     //string slicing   nad work on negative value also
+        console.log(slice);
+        var slice = string.substring(1, 6);   //string slicing
+        console.log(slice);
+
+        var substr = string.substr(1, 9);        //substring
+        console.log(substr);
+
+        var replaced = string.replace('a sting', 'Sambhu');             //replace
+        console.log(replaced);
+
+        console.log(replaced.toUpperCase());        //upper case
+        console.log(replaced.toLowerCase());        //lower case
+
+        var extraspace = "  asddsa asd s        ";
+        console.log(extraspace);
+        console.log(extraspace.trim());             //  remove the extra spaces from start and end...
+
+
+
+
+    </script>
+</body>
+
+</html>
