@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loops</title>
+</head>
+<body>
+    <div class="container">
+        <p> Thiis is loop tutorial.</p>
+    </div>
+
+    <script>
+    console.log("this is loop tutorial.")
+     let i=1;
+     for(i;i<5;i++){
+         console.log(i);
+     }
+
+     let arr = ["sambhu","Rajat","Shubham","Ganesh","Pintu"];
+    //  for (let index = 0; index < arr.length; index++) {
+    //      const element = arr[index];
+    //      console.log("Hello, ",+element);
+    //  }
+     for(element of arr){
+        //  console.log("hello "+ element +" welcome");
+        console.log("Hello ",element," Welcome");
+     }
+
+     let employee = {
+         name: "sambhu",
+         salary: 40000,
+         designation: "developer"
+     }
+     for(key in employee){
+         console.log(`the ${key} of employee is ${employee[key]}`);
+     }
+
+// while loop in JS
+
+let x = 0;
+while(x<5){
+    console.log(`${x} is less than 5`);
+    x++;
+}
+
+
+
+    </script>
+</body>
+</html>
